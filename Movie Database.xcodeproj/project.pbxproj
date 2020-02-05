@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,10 @@
 		AB6702E823EAAB9000544D5A /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB6702E623EAAB9000544D5A /* DetailViewController.xib */; };
 		AB74164423EB0FD000231F2A /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB74164323EB0FD000231F2A /* UIViewController.swift */; };
 		AB74164623EB111A00231F2A /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB74164523EB111A00231F2A /* NSObject.swift */; };
+		AB9D5AAF23EB386B00266C7D /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9D5AAD23EB386B00266C7D /* BaseResponse.swift */; };
+		AB9D5AB023EB386B00266C7D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9D5AAE23EB386B00266C7D /* Router.swift */; };
+		AB9D5AB223EB389100266C7D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9D5AB123EB389100266C7D /* Constant.swift */; };
+		AB9D5AB423EB3B7D00266C7D /* ManagerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9D5AB323EB3B7D00266C7D /* ManagerConnection.swift */; };
 		DE887A249900B1652AB4DD21 /* Pods_Movie_Database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846218195C69D170962AC924 /* Pods_Movie_Database.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +71,10 @@
 		AB6702E623EAAB9000544D5A /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		AB74164323EB0FD000231F2A /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		AB74164523EB111A00231F2A /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		AB9D5AAD23EB386B00266C7D /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		AB9D5AAE23EB386B00266C7D /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		AB9D5AB123EB389100266C7D /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		AB9D5AB323EB3B7D00266C7D /* ManagerConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerConnection.swift; sourceTree = "<group>"; };
 		CBA5C9EE21E08F441780FEDC /* Pods-Movie DatabaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie DatabaseTests.release.xcconfig"; path = "Target Support Files/Pods-Movie DatabaseTests/Pods-Movie DatabaseTests.release.xcconfig"; sourceTree = "<group>"; };
 		EEAE2B1103CFC4F1B76F091B /* Pods-Movie DatabaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie DatabaseTests.debug.xcconfig"; path = "Target Support Files/Pods-Movie DatabaseTests/Pods-Movie DatabaseTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,8 +196,8 @@
 		AB6702DC23EA9FF300544D5A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				AB6702E423EAA1B900544D5A /* Detail */,
 				AB6702DF23EAA09D00544D5A /* Home */,
+				AB6702E423EAA1B900544D5A /* Detail */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -222,6 +230,7 @@
 		AB74164023EB042A00231F2A /* Ultities */ = {
 			isa = PBXGroup;
 			children = (
+				AB9D5AB123EB389100266C7D /* Constant.swift */,
 			);
 			path = Ultities;
 			sourceTree = "<group>";
@@ -238,6 +247,9 @@
 		AB74164723EB13E800231F2A /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				AB9D5AAD23EB386B00266C7D /* BaseResponse.swift */,
+				AB9D5AAE23EB386B00266C7D /* Router.swift */,
+				AB9D5AB323EB3B7D00266C7D /* ManagerConnection.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -492,10 +504,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB9D5AB023EB386B00266C7D /* Router.swift in Sources */,
 				AB15E42823E6E3C4000D4A57 /* AppDelegate.swift in Sources */,
+				AB9D5AB223EB389100266C7D /* Constant.swift in Sources */,
+				AB9D5AB423EB3B7D00266C7D /* ManagerConnection.swift in Sources */,
 				AB15E42A23E6E3C4000D4A57 /* SceneDelegate.swift in Sources */,
 				AB6702E223EAA17A00544D5A /* HomeViewController.swift in Sources */,
 				AB74164623EB111A00231F2A /* NSObject.swift in Sources */,
+				AB9D5AAF23EB386B00266C7D /* BaseResponse.swift in Sources */,
 				AB6702E723EAAB9000544D5A /* DetailViewController.swift in Sources */,
 				AB74164423EB0FD000231F2A /* UIViewController.swift in Sources */,
 			);

@@ -5,6 +5,8 @@ target 'Movie Database' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'Alamofire', '~> 5.0.0-rc.3'
+  pod 'SwiftLint'
+  pod 'ObjectMapper', '~> 3.4'   
 
   # Pods for Movie Database
 

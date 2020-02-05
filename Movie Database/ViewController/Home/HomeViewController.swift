@@ -14,5 +14,11 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
     }
+    
+    @IBAction func searchByID(_ sender: Any) {
+        ManagerConnection.request(Router.searchById(id: 28), BaseResponse.self) { (result, error) in
+            
+        }
+    }
 
 }
