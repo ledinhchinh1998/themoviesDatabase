@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ijo-W0-Lps">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="Tp2-6x-I9J">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeVC" id="5GU-e3-CjB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="home-run" id="feS-GB-rEP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e6i-Sg-aXi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="568" y="-686"/>
+        </scene>
+        <!--SearchVC-->
+        <scene sceneID="fCn-fD-tii">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SearchVC" id="Wlb-v6-2Tq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="search" id="fbP-t1-WSP">
+                        <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VlJ-bG-hnV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950" y="-495"/>
+        </scene>
+        <!--FileDownloadVC-->
+        <scene sceneID="Cf8-tV-1ZJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FileDownloadVC" id="kJ8-rZ-5h4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Download" image="download" id="nCO-fv-ggG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nYO-EE-qYK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="979" y="-362"/>
+        </scene>
+        <!--ComingSoonVC-->
+        <scene sceneID="CqJ-TO-TLW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ComingSoonVC" id="AL0-tp-uoZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Coming Soon" image="video" id="kbl-uG-UwK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IMA-sf-hgw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="979" y="-425"/>
+        </scene>
+        <!--AddVC-->
+        <scene sceneID="2kh-CD-ixu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddVC" id="wyd-55-AGz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="More" image="more" id="BsK-o3-Blr"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gjj-MX-dJ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941" y="-295"/>
+        </scene>
+        <!--Main Tabbar Controller-->
+        <scene sceneID="CYP-i8-RE1">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ijo-W0-Lps" customClass="MainTabbarController" customModule="Movie_Database" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MVM-uh-4sR">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5GU-e3-CjB" kind="relationship" relationship="viewControllers" id="O0a-ak-dj9"/>
+                        <segue destination="Wlb-v6-2Tq" kind="relationship" relationship="viewControllers" id="2zE-Zy-qHm"/>
+                        <segue destination="AL0-tp-uoZ" kind="relationship" relationship="viewControllers" id="Ogh-Wp-rWg"/>
+                        <segue destination="kJ8-rZ-5h4" kind="relationship" relationship="viewControllers" id="cec-b6-6gK"/>
+                        <segue destination="wyd-55-AGz" kind="relationship" relationship="viewControllers" id="ZNH-1Y-5gT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BDc-AH-UR5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-123" y="-473"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="download" width="16" height="16"/>
+        <image name="home-run" width="16" height="16"/>
+        <image name="more" width="16" height="16"/>
+        <image name="search" width="16" height="16"/>
+        <image name="video" width="16" height="16"/>
+    </resources>
+</document>

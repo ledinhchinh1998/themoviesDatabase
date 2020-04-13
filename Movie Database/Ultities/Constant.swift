@@ -20,5 +20,6 @@ struct Constant {
         static let searchByID = "/movie/"
         static let searchByName = "/search/movie/"
         static let searchByGenres = "/genre/movie/"
+        static let popularMovie = "/movie/popular"
     }
 }

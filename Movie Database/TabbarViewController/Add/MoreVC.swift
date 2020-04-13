@@ -1,21 +1,21 @@
 //
-//  DetailViewController.swift
+//  AddVC.swift
 //  Movie Database
 //
-//  Created by Chinh le on 2/5/20.
+//  Created by Chinh le on 4/12/20.
 //  Copyright © 2020 Chinh le. All rights reserved.
 //
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class MoreVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
+    
 
     /*
     // MARK: - Navigation

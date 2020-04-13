@@ -20,11 +20,12 @@ enum Router: URLRequestConvertible {
     case searchById(id: Int)
     case searchByName(query: String)
     case searchByGenres(language: String)
+    case popularMovie(language: String, page: Int)
     
     //MARK: - HTTPMethod
     private var method: HTTPMethod {
         switch self {
-        case .searchById, .searchByName, .searchByGenres:
+        case .searchById, .searchByName, .searchByGenres, .popularMovie:
             return .get
         }
     }
@@ -38,6 +39,8 @@ enum Router: URLRequestConvertible {
             return Constant.APIParameterKey.searchByName
         case .searchByGenres:
             return Constant.APIParameterKey.searchByGenres
+        case .popularMovie:
+            return Constant.APIParameterKey.popularMovie
         }
     }
     
@@ -54,6 +57,10 @@ enum Router: URLRequestConvertible {
         case .searchByGenres(let language):
             return ["api_key": Constant.ProductionServer.apiKey,
                     "language": language]
+        case .popularMovie(let language, let page):
+            return ["api_key": Constant.ProductionServer.apiKey,
+                    "language": language,
+                    "page": page]
         }
     }
     

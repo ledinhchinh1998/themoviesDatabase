@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 
 //MARK: - Base Response 
-class BaseResponse: Mappable {
+class BaseResponse<T>: Mappable {
     
     required init?(map: Map) {
         
@@ -28,7 +28,7 @@ class BaseResponseError {
     var errorCode: Int?
     var errorMessage: String?
     
-    init(_ errorType: NetworkErrorType,_ errorCode: Int,_ errorMessage: String) {
+    init(_ errorType: NetworkErrorType?,_ errorCode: Int?,_ errorMessage: String) {
         self.errorType = errorType
         self.errorCode = errorCode
         self.errorMessage = errorMessage

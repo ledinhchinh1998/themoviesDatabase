@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,9 +16,8 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func searchByID(_ sender: Any) {
-        ManagerConnection.request(Router.searchById(id: 28), BaseResponse.self) { (result, error) in
-            
+        ManagerConnection.requestPopularMovie(router: Router.popularMovie(language: "en", page: 1)) { (result, error) in
+            print(result?.page)
         }
     }
-
 }

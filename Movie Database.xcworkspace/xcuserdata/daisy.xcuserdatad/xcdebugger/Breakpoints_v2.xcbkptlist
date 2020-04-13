@@ -3,4 +3,86 @@
    uuid = "125BF114-AA9C-4DA3-B8E2-91402259D30A"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5AF32839-C4AC-4D1D-87B2-EE888813F393"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Movie Database/Model/PopularModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "mapping(map:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9178F6C8-018C-42C4-B989-CD8845D31DF0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Movie Database/Model/PopularModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "PopularModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "9178F6C8-018C-42C4-B989-CD8845D31DF0 - 7cb05b1f7c808b01"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Movie_Database.PopularModel.__allocating_init(map: ObjectMapper.Map) -&gt; Swift.Optional&lt;Movie_Database.PopularModel&gt;"
+                  moduleName = "Movie Database"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/daisy/Desktop/Code/themoviesDatabase/Movie%20Database/Model/PopularModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "9178F6C8-018C-42C4-B989-CD8845D31DF0 - d89a1f88d10513b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Movie_Database.PopularModel.init(map: ObjectMapper.Map) -&gt; Swift.Optional&lt;Movie_Database.PopularModel&gt;"
+                  moduleName = "Movie Database"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/daisy/Desktop/Code/themoviesDatabase/Movie%20Database/Model/PopularModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "105">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0BB81BB3-7F66-4A7B-B887-9E9052ADEB43"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Movie Database/TabbarViewController/Search/SearchVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

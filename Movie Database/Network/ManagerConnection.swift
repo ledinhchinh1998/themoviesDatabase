@@ -9,21 +9,30 @@
 import Foundation
 import Alamofire
 import ObjectMapper
+import UIKit
 
 class ManagerConnection {
     static func isConnectionToInternet() -> Bool {
         return NetworkReachabilityManager()!.isReachable
     }
     
-    static func request<T: Mappable>(_ router: Router,_ returnType: T.Type, completion: (_ result: T?,_ error: BaseResponseError?) -> Void) {
-        if !isConnectionToInternet() {
-            return
-        }
-        
-        print(router.urlRequest)
-        
+    static func requestPopularMovie(router: Router, completion: @escaping (_ result: PopularModel?,_ error: BaseResponseError?) -> Void) {
         AF.request(router).responseJSON { (response) in
+            guard let data = response.data else {
+                return
+            }
             
+            do {
+                guard let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else {
+                    return
+                }
+                
+                let popularMovie = PopularModel(JSON: json)
+                completion(popularMovie, nil)
+            } catch {
+                let responseError = BaseResponseError(nil, nil, "Parse json API popular is fail")
+                completion(nil, responseError)
+            }
         }
     }
 }
